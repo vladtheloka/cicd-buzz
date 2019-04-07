@@ -8,4 +8,4 @@ else
 fi
 docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
 echo $TRAVIS_REPO_SLUG:$TAG
-docker push $DOCKER_USER/$TRAVIS_REPO_SLUG:$TAG
+docker push $TRAVIS_REPO_SLUG:$TAG
